@@ -1,0 +1,31 @@
+{
+  "name": "youtube-download-api-optimized",
+  "version": "2.0.0",
+  "description": "Fast YouTube video/audio download API optimized for Koyeb with keep-alive and auto-cookie updates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "update-cookies": "node update-cookies.js",
+    "update-cookies-weekly": "node update-cookies.js && echo 'Cookies updated at $(date)' >> cookies-update.log"
+  },
+  "keywords": [
+    "youtube",
+    "download",
+    "api",
+    "video",
+    "audio",
+    "cookies"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "node-cache": "^5.1.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
